@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*sas*/
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: white;
+  }
+  header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  header li a li a:hover {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    background-image: linear-gradient(to right, black 0%, transparent 25%);
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("https://econojournal.com.ar/cntnt/uploads/2019/10/Gasoducto-Noreste-1024x682.jpg");
+  background-size: 100%;
+  height: 100%;
+  font-family: "Righteous", cursive;
+}
+
+header {
+  margin: 0;
+  padding: 1px;
+  margin: 0px 0px 0px;
+  background-image: linear-gradient(to right, white 35%, transparent 85%);
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px #009999;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 15px;
+  word-spacing: 5px;
+  color: #c0c0c0;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  color: #009999;
+  size: 15px;
+  text-align: justify;
+  text-transform: lowercase;
+}
+
+footer {
+  font-size: 10px;
+  margin: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 1000px;
+  width: 100%;
+  background-image: linear-gradient(to right, white 25%, transparent 75%);
+  height: 5em;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+div.caja {
+  background-image: linear-gradient(to right, black 25%, transparent 75%);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+  border: 10px solid transparent;
+  padding: 15px;
+  box-shadow: 5px 5px 6px 6px;
+  margin-bottom: 20px;
+}
+div.caja p {
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 2px black;
+}
+
+h3 {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s;
+  background: transparent;
+  color: white;
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+/*# sourceMappingURL=destino.css.map */
